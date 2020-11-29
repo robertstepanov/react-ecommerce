@@ -18,13 +18,12 @@ const App = () => {
     fetchProducts();
   }, []);
 
-  console.log(products);
 
   return (
     <div>
       <Landing />
       <Navbar />
-      <Products />
+      <Products products={products} />
     </div>
   );
 };
